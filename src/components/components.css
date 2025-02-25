@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Inria+Sans:wght@400;700&family=Jost:wght@100..900&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+:root{
+     --Logo-font: "Inria Sans", serif;
+     --Basic-font: "Jost", serif;
+     --hero-font: "Gowun Batang", serif;
+     --primary-color: #FBC9A9;
+     --brown: #743131;
+     --white: #fbfbfb;
+}
+
+body{
+     background-color: var(--primary-color);
+}
+/* Header--CSS */
+
+.head-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+}
+.head-container h1 {
+     font-family: var(--Logo-font);
+     font-weight: 700;
+     font-size: 32px;
+     color: var(--brown);
+}
+.head-container .nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 20px;
+}
+.head-container .nav li{
+     list-style: none;
+}
+.head-container .nav a{
+     text-decoration: none;
+     color: var(--brown);
+     font-family: var(--Basic-font);
+     font-size: 20px;
+}
+.icons{
+     display: flex;
+     justify-content: space-between;
+     gap: 10px;
+}
+.icon{
+     width: 20px;
+     height: auto;
+}
+.icon img{
+     max-width: 100%;
+     max-height: 100%;
+}
+.search{
+     display: none;
+}
+.menu-toggle div{
+     width: 20px;
+     height: 4px;
+     margin-top: 2px;
+     border-radius: 2px;
+     background-color: var(--brown);
+}
+.menu-toggle {
+     display: block;
+}
+
+.nav-container{
+     display: none;
+}
+
+/* Hero-section--CSS*/
+
+.hero{
+     padding: 20px;
+     background-color: var(--white);
+     margin: 20px;
+     border-radius: 16px;
+     text-align: center;
+}
+.hero-motto h1{
+     font-family: var(--hero-font);
+     font-size: 40px;
+     color: var(--brown);
+     margin-bottom: 20px;
+}
+.hero-images{
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+.crime{
+     width: 120px;
+     height: auto;
+}
+.wuthering{
+     width: 110px;
+     height: auto;
+}
+.crime img,
+.wuthering img {
+     max-width: 100%;
+     max-height: 100%;
+}
+
+
+@media(min-width: 768px){
+
+     /* Header--CSS */
+
+     .head-container {
+          padding: 20px 50px;
+     }
+     .menu-toggle{
+          display: none;
+     }
+     .nav-container{
+          display: block;
+     }
+     .search {
+          display: block;
+     }
+
+     /* Hero-section--CSS*/
+
+     .hero{
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          margin: 20px 50px;
+          text-align: left;
+          padding: 70px 50px;
+     }
+     .hero-motto h1{
+          font-size: 64px;
+          padding-right:40px;
+     }
+     .hero-images {
+          gap: 20px;
+     }
+
+     .crime {
+          width: 180px;
+          height: auto;
+     }
+
+     .wuthering {
+          width: 150px;
+          height: auto;
+     }
+}
+
+
