@@ -129,7 +129,7 @@ body{
           transition: none;
      }
      .head-container .nav.active-nav{
-          top: 16%;
+          top: 70px;
      }
 
 }
