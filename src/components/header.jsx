@@ -10,7 +10,6 @@ const Header = () => {
                          <li><a href="/">Home</a></li>
                          <li><a href="/Authors">Authors</a></li>
                          <li><a href="/Genre">Genre</a></li>
-                         <li><a href="/About">About</a></li>
                     </ul>
                </div>
                <div className="icons">

@@ -1,15 +1,14 @@
-import Header from "./components/header"
-import Hero from "./components/hero"
-import BooksList from "./components/books_list"
+// import Home from "./pages/home"
+import Authors from "./pages/author"
+// import BooksList from "./components/books_list"
 
 import "./components/components.css"
 
 const App = () => {
      return (
           <div>
-               <Header />
-               <Hero />
-               <BooksList />
+               {/* <Home /> */}
+               <Authors />
           </div>
      )
 }

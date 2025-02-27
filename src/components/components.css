@@ -11,6 +11,7 @@
      --Basic-font: "Jost", serif;
      --hero-font: "Gowun Batang", serif;
      --primary-color: #FBC9A9;
+     --secondary-color: #fddeca;
      --brown: #743131;
      --white: #fbfbfb;
 }
@@ -18,6 +19,10 @@
 body{
      background-color: var(--primary-color);
 }
+
+/* // Home--page--CSS */
+
+
 /* Header--CSS */
 
 .head-container{
@@ -25,6 +30,10 @@ body{
      justify-content: space-between;
      align-items: center;
      padding: 20px;
+     position: sticky;
+     top: 0;
+     background-color: var(--primary-color);
+     z-index: 1000;
 }
 .head-container h1 {
      font-family: var(--Logo-font);
@@ -46,6 +55,12 @@ body{
      color: var(--brown);
      font-family: var(--Basic-font);
      font-size: 20px;
+}
+.head-container .nav a:hover {
+     padding: 6px 15px;
+     background-color: var(--secondary-color);
+     border-radius: 10px;
+     transition: all 0.5s ease;
 }
 .icons{
      display: flex;
@@ -117,6 +132,10 @@ body{
      padding: 20px;
      max-width: 300px;
      border-radius: 12px;
+     cursor: pointer;
+}
+.book-card:hover{
+     transform: translate(0, -10px);
 }
 .book-image{
      max-width: 260px;
@@ -179,6 +198,9 @@ body{
           font-size: 50px;
           padding-right: 16px;
      }
+     .book-image{
+          height: 360px;
+     }     
      .hero-images {
           gap: 20px;
      }
@@ -190,7 +212,7 @@ body{
           align-items: stretch;
      }
      .book-card{
-          margin-top: 30px;
+          margin: 30px 15px 0;
      }
      .book-card h2{
           font-size: 14px;
@@ -219,3 +241,109 @@ body{
      }
 }
 
+
+
+
+/* // Author--page--CSS */
+
+.profile{
+     padding: 20px;
+     background-color: var(--white);
+     margin: 20px;
+     border-radius: 16px;
+}
+.profile-image{
+     max-width: 200px;
+     height: auto;
+     margin: 0 auto;
+}
+.profile-image img{
+     max-width: 100%;
+     max-height: 100%;
+     border-radius: 8px;
+}
+.biography h1{
+     font-family: var(--hero-font);
+     font-size: 36px;
+     color: var(--brown);
+     margin-top: 14px;
+}
+.biography span{
+     font-size: 18px;
+}
+.biography p{
+     font-family: var(--Basic-font);
+     font-size: 17px;
+     margin-top: 16px;
+}
+.biography h2{
+     font-family: var(--hero-font);
+     font-size: 28px;
+     color: var(--brown);
+     text-align: left;
+     margin: 14px 0;
+}
+.book-images{
+     display: flex;
+     gap: 20px;
+}
+.book-pic{
+     width: 100px;
+     height: auto;
+}
+.book-pic img{
+     max-width: 100%;
+     max-height: 100%;
+}
+
+@media(min-width: 768px) {
+     .profile{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 50px 350px 50px 400px;
+          margin: 20px 50px;
+     }
+     .profile-image {
+          min-width: 300px;
+          height: auto;
+          transform: scale(1.5);
+     }
+}
+@media(min-width: 1024px) {
+     .profile {
+          padding: 60px 100px 60px 130px;
+     }
+
+     .profile-image {
+          transform: scale(1.7);
+     }
+     .biography h1 {
+          font-size: 48px;
+     }
+
+     .biography span {
+          font-size: 18px;
+     }
+
+     .biography p {
+          font-size: 18px;
+          margin-top: 16px;
+          padding-right: 50px;
+     }
+
+     .biography h2 {
+          font-family: var(--hero-font);
+          font-size: 32px;
+          color: var(--brown);
+          margin: 20px 0 14px;
+     }
+     .book-images {
+          gap: 0px;
+     }
+
+     .book-pic {
+          width: 150px;
+          height: 180px;
+     }
+}
