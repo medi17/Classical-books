@@ -6,9 +6,7 @@ const Header = () => {
 
      const [toggleState, setToggleState] = useState(false)
 
-     const toggleMenu = () => {
-          console.log("JS sucksssss");
-          
+     const toggleMenu = () => {   
           setToggleState(!toggleState);
      }
 
